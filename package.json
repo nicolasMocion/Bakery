@@ -13,5 +13,13 @@
     "express": "^5.1.0",
     "sqlite3": "^5.1.7"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasMocion/Bakery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicolasMocion/Bakery/issues"
+  },
+  "homepage": "https://github.com/nicolasMocion/Bakery#readme",
   "description": ""
 }
