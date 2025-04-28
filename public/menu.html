@@ -38,37 +38,8 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Topbar Start -->
-    <div class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-6 px-5 text-start">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a class="small text-light" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="small text-light" href="#">Career</a></li>
-                    <li class="breadcrumb-item"><a class="small text-light" href="#">Terms</a></li>
-                    <li class="breadcrumb-item"><a class="small text-light" href="#">Privacy</a></li>
-                </ol>
-            </div>
-            <div class="col-lg-6 px-5 text-end">
-                <small>Follow us:</small>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn-lg-square text-primary pe-0" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
- 
- 
- 
- 
- 
- 
- <!-- Navbar Start -->
- <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
     <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
         <h1 class="text-primary m-0">Misia Juaca</h1>
     </a>
@@ -80,37 +51,37 @@
             <a href="index.html" class="nav-item nav-link active">Home</a>
             <a href="about.html" class="nav-item nav-link">Acerca de</a>
             <a href="service.html" class="nav-item nav-link">Servicios</a>
-            <a href="product.html" class="nav-item nav-link">Productos</a>
+            <a href="allProducts.html" class="nav-item nav-link">Productos</a>
             <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Más</a>
                 <div class="dropdown-menu m-0">
-                    <a href="team.html" class="dropdown-item">Our Team</a>
-                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                    <a href="404.html" class="dropdown-item">404 Page</a>
+                    <a href="team.html" class="dropdown-item">Nuestro Equipo</a>
+                    <a href="login.html" class="dropdown-item">Admin Login</a>
                 </div>
             </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a href="contact.html" class="nav-item nav-link">Contacto</a>
         </div>
         <div class=" d-none d-lg-flex">
             <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
                 <i class="fa fa-phone text-primary"></i>
             </div>
             <div class="ps-3">
-                <small class="text-primary mb-0">Call Us</small>
-                <p class="text-light fs-5 mb-0">+012 345 6789</p>
+                <small class="text-primary mb-0">Llama Ahora</small>
+                <p class="text-light fs-5 mb-0">314 3375950</p>
             </div>
         </div>
     </div>
 </nav>
 <!-- Navbar End -->
 
-<div class="container py-5">
+
+<div class="container py-5 mt-5">
     <h1 class="mb-4 text-center text-primary">Gestión del Menú</h1>
     
     <!-- Add Item Button -->
     <div class="d-flex justify-content-end mb-3">
         <button class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#addItemModal">
-            ➕ Agregar Producto
+            ➕ Agregar Producto al menu
         </button>
     </div>
 
@@ -120,9 +91,6 @@
             <thead class="table-dark text-center">
                 <tr>
                     <th>Nombre</th>
-                    <th>Descripción</th>
-                    <th>Precio</th>
-                    <th>Imagen</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -134,35 +102,31 @@
 </div>
 
 
-<!-- Add Item Modal -->
+<!-- Add Item Modal for Adding to Menu -->
 <div class="modal fade" id="addItemModal" tabindex="-1" aria-labelledby="addItemModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <form id="addItemForm">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="addItemModalLabel">Agregar Nuevo Producto</h5>
+                    <h5 class="modal-title" id="addItemModalLabel">Seleccionar Productos para Agregar al Menú</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="itemName" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="itemName" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="itemDescription" class="form-label">Descripción</label>
-                        <textarea class="form-control" id="itemDescription" rows="2"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <label for="itemPrice" class="form-label">Precio</label>
-                        <input type="number" class="form-control" id="itemPrice" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="itemImage" class="form-label">URL de la Imagen</label>
-                        <input type="url" class="form-control" id="itemImage">
-                    </div>
+                    <table class="table" id="productsTable">
+                        <thead>
+                            <tr>
+                                <th>Select</th>
+                                <th>Product ID</th>
+                                <th>Product Name</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productsList">
+                            <!-- Products will be dynamically populated here -->
+                        </tbody>
+                    </table>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-success">Guardar</button>
+                    <button type="button" class="btn btn-success" id="addToMenuBtn">Agregar al Menú</button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                 </div>
             </form>
@@ -170,29 +134,24 @@
     </div>
 </div>
 
-
-
-<!-- Footer Start -->
-<div class="container-fluid bg-dark text-light footer my-6 mb-0 py-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Dirección</h4>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Armenia, Quindío, Colombia</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>3143375950</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Quick Links</h4>
-                <a class="btn btn-link" href="">About Us</a>
-                <a class="btn btn-link" href="">Contact Us</a>
-                <a class="btn btn-link" href="">Our Services</a>
-                <a class="btn btn-link" href="">Terms & Condition</a>
-                <a class="btn btn-link" href="">Support</a>
+       <!-- Footer Start -->
+       <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Dirección</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Armenia, Quindío, Colombia</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>3143375950</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Links</h4>
+                    <a class="btn btn-link" href="about.html">Acerca de</a>
+                    <a class="btn btn-link" href="contact.html">Contacto</a>
+                    <a class="btn btn-link" href="service.html">Servicios</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Footer End -->
 
 
 <!-- Back to Top -->
@@ -211,63 +170,4 @@
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
 
-
-<script>
-    const API_URL = '/api/products';
-
-    // Cargar productos al inicio
-    document.addEventListener('DOMContentLoaded', async () => {
-        const tableBody = document.getElementById('menuTableBody');
-        tableBody.innerHTML = ''; // limpia por si acaso
-
-        try {
-            const res = await fetch(API_URL);
-            const products = await res.json();
-
-            products.forEach(p => {
-                const row = `
-                    <tr>
-                        <td>${p.name}</td>
-                        <td>${p.description}</td>
-                        <td>$${p.price.toFixed(2)}</td>
-                        <td><img src="${p.image}" alt="${p.name}" style="width: 80px;"></td>
-                        <td>
-                            <!-- Aquí podrías poner botones de editar/eliminar -->
-                            <button class="btn btn-sm btn-secondary">Editar</button>
-                            <button class="btn btn-sm btn-danger">Eliminar</button>
-                        </td>
-                    </tr>
-                `;
-                tableBody.innerHTML += row;
-            });
-        } catch (error) {
-            console.error('Error al cargar productos:', error);
-        }
-    });
-
-    // Agregar producto
-    document.getElementById('addItemForm').addEventListener('submit', async (e) => {
-        e.preventDefault();
-
-        const name = document.getElementById('itemName').value;
-        const description = document.getElementById('itemDescription').value;
-        const price = parseFloat(document.getElementById('itemPrice').value);
-        const image = document.getElementById('itemImage').value;
-
-        try {
-            const res = await fetch(API_URL, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, description, price, image })
-            });
-
-            if (res.ok) {
-                location.reload(); // refrescar para ver el nuevo producto
-            } else {
-                alert('Error al guardar el producto');
-            }
-        } catch (error) {
-            console.error('Error al guardar producto:', error);
-        }
-    });
-</script>
+<script src="js/menuMaking.js"></script>

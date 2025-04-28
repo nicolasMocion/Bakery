@@ -20,6 +20,7 @@ function initializeDatabase() {
     )
   `);
 
+
   db.run(`
     CREATE TABLE IF NOT EXISTS products (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -44,7 +45,7 @@ function initializeDatabase() {
   db.run(`
   CREATE TABLE IF NOT EXISTS menu (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    product_id INTEGER NOT NULL,
+    product_id INTEGER NOT NULL UNIQUE,
     FOREIGN KEY (product_id) REFERENCES products(id)
   );
   `);
